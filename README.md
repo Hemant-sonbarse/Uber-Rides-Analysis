@@ -1,19 +1,24 @@
 # **Uber Ride Booking Data Analysis**
 
 ## Problem Statement
-Uber faces challenges with **high cancellation rates**, **incomplete rides**, and **uneven demand patterns**, directly impacting revenue, operational efficiency, and customer experience.  
-The goal of this project is to **analyze ride booking data** to uncover trends, identify inefficiencies, and provide **data-driven insights** to improve service quality and optimize revenue.
+Uber operates in a highly competitive ride-hailing market where **operational efficiency** and **customer experience** are key to profitability.  
+The company has been facing challenges due to **high ride cancellations**, **inconsistent driver availability**, and **limited visibility** into how these factors impact revenue and service quality.
+
+Without a **centralized analytics solution**, stakeholders struggle to answer critical questions such as:
+- Which factors are driving cancellations — **customer behavior**, **driver availability**, or **operational inefficiencies**?  
+- How much **revenue is being lost** due to incomplete rides?  
+- When and where does **peak demand** occur, and are resources being **allocated efficiently**?  
+- Are **service levels and response times** meeting operational targets?
 
 ---
 
 ## Project Overview
 This project delivers an **end-to-end analytics workflow**, from raw data to interactive visualizations.  
 Using **Python, SQL Server, and Power BI**, the analysis focuses on:
-- Identifying **demand trends** across time and location.
-- Understanding **cancellation behavior** by customers and drivers.
-- Measuring **operational efficiency** through CTAT (Customer Turnaround Time) and VTAT (Vehicle Turnaround Time).
-- Evaluating **service quality** via customer and driver ratings.
-- Building a **Power BI dashboard** for monitoring KPIs and business performance.
+- Identifying **demand trends** across time and location.  
+- Understanding **cancellation behavior** by customers and drivers.  
+- Measuring **operational efficiency** through CTAT (Customer Turnaround Time) and VTAT (Vehicle Turnaround Time).  
+- Building a **two-page Power BI dashboard** to monitor KPIs and operational performance.  
 
 ---
 
@@ -42,14 +47,14 @@ The dataset contains **150,000 records** and **21 attributes**, covering ride de
    - Identified top pickup and drop locations.  
    - Evaluated cancellation patterns by **customer vs. driver**.  
    - Measured CTAT and VTAT across vehicle types.  
-   - Examined payment preferences and ratings.
+   - Examined payment preferences.
 
 3. **SQL Analysis**  
    - Wrote SQL queries to extract advanced metrics like **lost revenue**, top-performing locations, and peak demand periods.  
    - Performed trend analysis using SQL Server and connected results to Power BI.
 
 4. **Power BI Dashboard Creation**  
-   - Built an interactive dashboard with filters for **date**, **vehicle type**, and **payment method**.  
+   - Built a **two-page interactive dashboard** with filters for **date**, **vehicle type**, and **payment method**.  
    - Visualized KPIs for bookings, revenue, cancellations, and operational performance.
 
 ---
@@ -57,9 +62,37 @@ The dataset contains **150,000 records** and **21 attributes**, covering ride de
 ## Key Insights
 - **Driver cancellations dominate:** 27K driver cancellations vs. 10.5K customer cancellations, highlighting supply-side issues.  
 - **High wait times:** Average **CTAT ≈ 29 minutes**, signaling the need for operational improvements.  
-- **Revenue at risk:** Incomplete rides caused an estimated **₹4.6M revenue loss**.  
-- **Demand hotspots:** Specific pickup locations show consistently higher booking volumes, ideal for driver allocation strategies.  
-- **Ratings:** Average **customer rating (4.40)** is slightly higher than **driver rating (4.23)**, indicating scope for improving service quality.  
+- **Revenue at risk:** Incomplete rides caused a total **₹5M revenue loss**.  
+- **Demand hotspots:** Certain pickup locations consistently show higher booking volumes, ideal for driver allocation strategies.  
 - **Digital payments lead:** **UPI** is the most popular payment method among customers.
 
 ---
+
+## Dashboard Overview
+The dashboard consists of **two main pages**, designed to support both executive-level decision-making and operational troubleshooting:
+
+### **Page 1 – Executive Summary**
+- **KPI Cards:** Total Bookings, Total Revenue, Total Cancellations, Lost Revenue, Average CTAT  
+- **Visuals:**  
+  - Cancellations  
+  - Rides Per Hour  
+  - Revenue by Vehicle Type  
+  - Cancellation Rate by Hour  
+  - Revenue by Payment Method  
+
+### **Page 2 – Operational Insights**
+- **Visuals:**  
+  - Top Pickup Locations  
+  - Revenue Trend  
+  - Lost Revenue by Vehicle Type  
+  - Avg VTAT & CTAT by Vehicle  
+  - Total Cancellations by Vehicle Type  
+
+---
+
+## Key Insights
+- **Driver cancellations dominate:** 27K driver cancellations vs. 10.5K customer cancellations, highlighting supply-side issues.  
+- **High wait times:** Average **CTAT ≈ 29 minutes**, signaling the need for operational improvements.  
+- **Revenue at risk:** Incomplete rides caused a total **₹5M revenue loss**.  
+- **Demand hotspots:** Certain pickup locations consistently show higher booking volumes, ideal for driver allocation strategies.  
+- **Digital payments lead:** **UPI** is the most popular payment method among customers.
