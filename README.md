@@ -77,16 +77,16 @@ The dashboard consists of **two main pages**, designed to support both executive
   - Cancellations  
   - Rides Per Hour  
   - Revenue by Vehicle Type  
-  - Cancellation Rate by Hour  
+  - Revenue Trend  
   - Revenue by Payment Method  
 
 ### **Page 2 – Operational Insights**
 - **Visuals:**  
-  - Top Pickup Locations  
-  - Revenue Trend  
-  - Lost Revenue by Vehicle Type  
+  - Top Pickup Locations   
   - Avg VTAT & CTAT by Vehicle  
-  - Total Cancellations by Vehicle Type  
+  - Total Cancellations by Vehicle Type
+  - Cancellation Rate by Hour
+  - lost Revenue by Vehicle Type
 
 ---
 
